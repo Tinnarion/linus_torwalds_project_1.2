@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', Georgia, serif; /*НАСТРОЙКИ ШРИФТА ДЛЯ ОСНОВНОГО ТЕКСТА*/
+    font-size: 17px;
+    line-height: 1.7;
+    color: #334155;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: #0f172a;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #0f172a;
+}
+
+h1 {
+    font-size: 2rem; /*ИЗМЕНЁННЫЕ ПРАВИЛА ЗАГОЛОВКОВ*/
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.date {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.quote {
+    background: #f8fafc;
+    border-left: 5px solid #2563eb;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.quote cite {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 8px;
+}
+
+.figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.figure img {
+    max-width: 400px;
+    width: 100%;
+    border: 3px solid #0f172a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.figure figcaption {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.portrait {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto 20px;
+    border: 3px solid #0f172a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+dl {
+    margin-bottom: 15px;
+}
+
+dt {
+    font-weight: bold;
+    color: #0f172a;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 0;
+    color: #334155;
+}
+
+dd::before {
+    content: "— ";
+    color: gray;
+}
+
+code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #be185d;
+}
+
+kbd {
+    background: #1e293b;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.card {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sources {
+    margin-top: 15px;
+}
+
+.sources img {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/*ИЗМЕНЕНИЯ ДЛЯ ВТОРОЙ ПРАКТИЧЕСКОЙ РАБОТЫ*/
+/*ССЫЛКИ*/
+a {
+    color: #0026ff;
+    text-decoration: none;
+}
+
+.header a {
+    color: #fbbf24;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer a {
+    color: #fbbf24;
+    text-decoration: none;
+}
+
+/*ДЕЙСТВИЯ С ССЫЛКАМИ*/
+a:hover {
+    color: #3554ff;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: #3554ff;
+    outline: auto darkcyan 2px;
+    outline-offset: 3px;
+}
+
+.header a:hover {
+    color: #f1ff76;
+    text-decoration: underline;
+}
+
+.header a:focus {
+    color: #f1ff76;
+    outline: auto darkorange 2px;
+    outline-offset: 3px;
+}
+
+.footer a:hover {
+    color: #f1ff76;
+    text-decoration: underline;
+}
+
+.footer a:focus {
+    color: #f1ff76;
+    outline: auto darkorange 2px;
+    outline-offset: 3px;
+}
+
+#info a:hover {
+    color: #ff004c;
+    text-decoration: underline;
+}
+
+#info a:focus {
+    color: #ff004c;
+    outline: auto rgb(82, 0, 24) 2px;
+    outline-offset: 3px;
+}
+
+/*ИНФОРМАЦИЯ*/
+#info ul li:nth-child(even) .card {
+    background-color: #ffefef;
+    border-radius: 8px;
+}
+
+#info #terms::after {
+    content: "Важно!";
+    background: #ff6a6a;
+    color: #ffffff;
+    border: 2px solid #7f1d1d;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+}
+
+/*РАЗРЯЖЕННЫЙ ТЕКСТ*/
+article p::first-line {
+    letter-spacing: 2px;
+}
+
+/*ОФОРМЛЕНИЕ АНГЛИЙСКОГО*/
+blockquote:lang(en) {
+    font-style: italic;
+    font-family: Georgia, serif;
+    color: #64748b;
+    border-left: 3px solid #cbd5e1;
+    padding-left: 12px;
+    margin: 15px 0;
+}
+
+/*ВВЕДЕНИЕ*/
+#intro strong {
+    color: #0f172a;
+    font-size: 150%;
+}
+
+#intro em {
+    color: #1d4ed8;
+    text-shadow: 1px 1px 2px #0f172a;
+}
+
+/*РЕСУРСЫ В ПОДВАЛЕ*/
+.footer .sources img {
+    border: 2px solid #fbbf24;
+    border-radius: 6px;
+    padding: 4px;
+    transition: 0.2s;
+}
+
+.footer .sources img:hover {
+    border-color: #ffffff;
+    background: #fbbf24;
+}
+
+/*ОТСТУП МЕЖДУ АБЗАЦАМИ И КАРТИНКОЙ*/
+img+p,
+figure+p {
+    margin-top: 25px;
+}
