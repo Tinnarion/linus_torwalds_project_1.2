@@ -319,3 +319,102 @@ img+p,
 figure+p {
     margin-top: 25px;
 }
+
+/*ТАБЛИЦА*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0f172a;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+tr:last-child {
+    background-color: #fef3c7;
+}
+
+/*ФОРМА ОБРАЩЕНИЯ*/
+#contact-form {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.form_item {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #0f172a;
+    font-size: 0.95rem;
+}
+
+#contact-form input[type="text"], /*ПОЛЯ ВВОДА ТЕКСТА*/
+#contact-form input[type="email"],
+#contact-form input[type="date"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ede9fe;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form input[type="submit"] {  /*КНОПКА ОТПРАВКИ*/
+    background-color: #9f7aea;
+    color: #2d3748;
+    border: 2px solid #0f172a;
+    padding: 5px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #f3e8ff;
+    color: #553c9a;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 0.85rem;
+}
