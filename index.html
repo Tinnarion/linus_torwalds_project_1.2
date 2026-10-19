@@ -23,6 +23,7 @@
         <nav>
             <a href="#intro">Введение</a>
             <a href="#info">Информация</a>
+            <a href="#contact">Обратная связь</a>
         </nav>
     </header>
 
@@ -76,6 +77,55 @@
                 <li><a href="facts.html" class="card">Интересные факты</a></li>
                 <li id="terms"><a href="terms.html" class="card">Список терминов</a></li>
             </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Обратная связь</h2>
+            <form id="contact-form" action="">
+                <div class="form_item">
+                    <label for="topic">Тема</label><br>
+                    <select name="topic" id="topic">
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form_item">
+                    <label for="name">Имя</label><br>
+                    <input type="text" name="name" id="name" placeholder="Введите имя" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="mail@example.com" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="message">Текст сообщения</label><br>
+                    <textarea name="message" id="message" placeholder="Ваше сообщение" required></textarea>
+                </div>
+
+                <div class="form_item">
+                    <label for="birthdate">Дата обращения</label><br>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="phone">Телефон</label><br>
+                    <input type="tel" name="phone" id="phone" placeholder="+7 (999) 000-00-00">
+                </div>
+
+                <div class="form_item checkbox-group">
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">Согласен с политикой конфиденциальности</label>
+                </div>
+
+                <div class="form_item">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
         </section>
     </main>
 
